@@ -1,0 +1,24 @@
+{
+  "project": {
+    "name": "ai-engineering-template",
+    "description": "Reusable GitHub-native template for Claude Code based AI engineering workflows"
+  },
+  "language_policy": {
+    "default_agent_language": "en",
+    "human_review_language": "hu-optional"
+  },
+  "execution_policy": {
+    "prefer_skills_for_structured_tasks": true,
+    "prefer_subagents_for_complex_tasks": true,
+    "require_small_reviewable_changes": true,
+    "forbid_direct_main_modification": true
+  },
+  "documentation_policy": {
+    "require_setup_docs_for_non_repo_configuration": true,
+    "require_english_agent_files": true,
+    "allow_hungarian_review_docs": true
+  },
+  "hooks": {
+    "directory": ".claude/hooks"
+  }
+}
