@@ -9,16 +9,16 @@
 - [x] create initial documentation baseline
 
 ## Planned next steps
-- [ ] create `.claude/` structure
-- [ ] add initial skills
-- [ ] add initial subagents
-- [ ] add issue templates
-- [ ] add PR template
-- [ ] add CI workflows
-- [ ] configure GitHub Project
-- [ ] configure labels
-- [ ] configure protected branches
-- [ ] configure CODEOWNERS
+- [x] create `.claude/` structure
+- [x] add initial skills
+- [x] add initial subagents
+- [x] add issue templates
+- [x] add PR template
+- [x] add CI workflows
+- [x] configure GitHub Project
+- [x] configure labels
+- [x] configure protected branches
+- [x] configure CODEOWNERS
 - [ ] configure rulesets if used
 - [ ] configure GitHub Actions secrets
 - [ ] enable template repository

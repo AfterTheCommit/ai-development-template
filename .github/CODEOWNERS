@@ -1,0 +1,11 @@
+# Default owner
+* @Th3Punk
+
+# Claude workflow files
+/.claude/ @Th3Punk
+
+# GitHub workflow config
+/.github/ @Th3Punk
+
+# Documentation
+/docs/ @Th3Punk
