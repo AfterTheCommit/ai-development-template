@@ -1,0 +1,60 @@
+name: Sprint Task
+description: Create a sprint-sized implementation task linked to a larger feature or bug.
+title: "[Task] "
+labels: ["type:task"]
+body:
+  - type: input
+    id: parent
+    attributes:
+      label: Parent Issue
+      description: Link the feature, bug, or epic this task belongs to.
+      placeholder: "#123"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Task Summary
+      description: Describe the task in implementation-ready language.
+      placeholder: What should be implemented?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Describe how the task will be validated.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Definition of Done
+      description: Concrete completion expectations for this task.
+      placeholder: |
+        - [ ] Code implemented
+        - [ ] Tests updated
+        - [ ] Docs updated if needed
+        - [ ] PR opened
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - backend
+        - frontend
+        - database
+        - docs
+        - infra
+        - mixed
+    validations:
+      required: true

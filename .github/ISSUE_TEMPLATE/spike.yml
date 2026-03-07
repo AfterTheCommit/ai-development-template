@@ -1,0 +1,42 @@
+name: Spike
+description: Research or investigation task used to reduce uncertainty before implementation.
+title: "[Spike] "
+labels: ["type:spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research Question
+      description: What must be answered?
+      placeholder: What do we need to learn?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this investigation needed?
+      placeholder: Background and context
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired_output
+    attributes:
+      label: Desired Output
+      description: What deliverable should result from the spike?
+      placeholder: Recommendation, options, ADR draft, prototype, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: done_when
+    attributes:
+      label: Done When
+      description: How do we know the spike is complete?
+      placeholder: |
+        - [ ] Key unknowns resolved
+        - [ ] Recommendation documented
+    validations:
+      required: true

@@ -48,3 +48,15 @@ However, any actual runtime integration that depends on:
 - MCP connections
 
 must be documented separately before being treated as active.
+
+## Backlog and workflow UI note
+
+Issue templates and PR templates live in the repository.
+
+However, the following items must still be created manually in GitHub UI later:
+
+- labels
+- GitHub Project
+- custom project fields
+- project views
+- workflow governance settings

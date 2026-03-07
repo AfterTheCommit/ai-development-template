@@ -1,0 +1,65 @@
+name: Feature
+description: Create a new feature request with acceptance criteria and delivery context.
+title: "[Feature] "
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the requested feature in one clear paragraph.
+      placeholder: Describe the feature request.
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_value
+    attributes:
+      label: Business Value
+      description: Explain why this feature matters.
+      placeholder: What value does this feature deliver?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Describe what is included in scope and what is excluded if known.
+      placeholder: In scope / out of scope
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the expected observable outcomes.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical Notes
+      description: Optional technical constraints, dependencies, or implementation hints.
+      placeholder: Constraints, dependencies, assumptions
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary Area
+      options:
+        - backend
+        - frontend
+        - database
+        - docs
+        - infra
+        - mixed
+    validations:
+      required: true
