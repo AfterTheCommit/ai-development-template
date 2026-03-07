@@ -14,6 +14,16 @@ Later phases will add:
 - issue and PR templates
 - review and maintainability gates
 
+## Hosting baseline
+
+The default target environment for this repository is:
+
+- GitHub Organization
+- GitHub Free
+- Public repository
+
+Do not assume private-repository-only governance features.
+
 ## Working principles
 
 1. Prefer small, reviewable increments.

@@ -37,6 +37,16 @@ Some required configuration lives in GitHub settings and must be applied manuall
 
 See `docs/setup/` for the step-by-step setup instructions.
 
+## Current hosting baseline
+
+This template is designed to work on:
+
+- GitHub Organization
+- GitHub Free plan
+- Public repository
+
+This baseline was selected to keep governance features available without requiring a paid plan.
+
 ## Intended usage
 
 1. Use this repository as a template

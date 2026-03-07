@@ -1,10 +1,10 @@
 # Platform Decisions
 
-## Recommended baseline
+## Selected baseline
 
 - GitHub Organization
-- GitHub Team plan
-- Private template repository
+- GitHub Free plan
+- Public template repository
 - VS Code as the local editing environment
 - Claude Code used locally first
 - GitHub Actions added later
@@ -12,35 +12,36 @@
 
 ## Why this baseline
 
-This workflow depends on:
+This workflow needs:
 
-- repository governance
-- protected branches
-- rulesets
-- GitHub Projects with sprint-oriented custom fields
-- reusable team-level setup
+- GitHub Projects
+- pull request based development
+- protected branches and/or rulesets
+- reusable template repository structure
+- low-cost setup
 
-Using an organization with a paid plan gives the cleanest long-term setup for private repositories and governance controls.
+GitHub Free supports strong governance for public repositories, including rulesets for public repos and free GitHub Actions usage on public repositories.
+
+## Tradeoff
+
+The repository is public, so it must not contain:
+
+- secrets
+- internal-only credentials
+- sensitive internal architecture details
+- private operational data
 
 ## Alternatives
 
-### Lowest-cost option
-- personal account or organization
+### Private repository + paid plan
+This would provide stronger privacy, but is not the selected baseline.
+
+### Private repository + GitHub Free
+Not selected because governance for private repositories is more limited.
+
+## Final decision
+
+Default recommendation for this template:
+- organization
 - public repository
 - GitHub Free
-
-Tradeoff:
-- weaker governance for private repos
-- not the preferred long-term setup
-
-### Mid option
-- personal account
-- private repository
-- GitHub Pro
-
-Tradeoff:
-- less scalable than organization-based setup
-
-## Decision for this template
-
-Default recommendation: organization + private repository + GitHub Team
