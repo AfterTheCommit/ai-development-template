@@ -19,6 +19,6 @@
 - [x] configure labels
 - [x] configure protected branches
 - [x] configure CODEOWNERS
-- [ ] configure rulesets if used
+- [x] configure rulesets if used
 - [ ] configure GitHub Actions secrets
 - [ ] enable template repository
