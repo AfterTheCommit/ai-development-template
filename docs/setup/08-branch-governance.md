@@ -24,9 +24,14 @@ All changes must go through pull requests.
 
 ### Required approvals
 
-Minimum approvals:
+Current template baseline for solo setup:
 
-1
+0
+
+Reason:
+The template is currently bootstrapped by a single maintainer, and pull request authors cannot approve their own pull requests.
+
+When the repository has at least one additional reviewer, this should be raised to 1.
 
 ### Required status checks
 
