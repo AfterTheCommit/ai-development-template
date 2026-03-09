@@ -1,0 +1,28 @@
+name: Template CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-template:
+    name: validate-template
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate required template files
+        run: bash scripts/ci/check-required-files.sh
+
+      - name: Validate shell scripts
+        run: bash scripts/ci/check-shell-scripts.sh
+
+      - name: Validate markdown structure
+        run: bash scripts/ci/check-markdown-headings.sh
+
+      - name: Run full template validation
+        run: bash scripts/ci/run-template-validation.sh
