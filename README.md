@@ -1,3 +1,17 @@
+## Using this repository as a template
+
+This repository is intended to be used as a GitHub template for new AI-assisted development projects.
+
+To create a new project:
+
+1. Click **Use this template** on GitHub.
+2. Create a new repository.
+3. Follow the bootstrap guide:
+
+`docs/setup/10-new-project-bootstrap.md`
+
+The bootstrap guide describes how to configure the GitHub Project, rulesets, and labels required for the workflow.
+
 # AI Engineering Template
 
 Reusable GitHub-native template repository for AI-assisted software development.
